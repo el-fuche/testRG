@@ -26,7 +26,18 @@ typedef void (^RegisterCallBack)(BOOL success);
 
 @end
 
+
+
+@protocol MyDelegate <NSObject>
+
+
+@required
++ (void)callIncoming;
+
+@end
+
 @interface ObjCMethodsPjsip : NSObject
+@property (nonatomic, weak) id<MyDelegate> delegate;
 
 
 @end

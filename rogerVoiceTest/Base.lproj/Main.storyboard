@@ -30,10 +30,19 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gVN-zU-Gsh">
+                                <rect key="frame" x="164" y="372" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="registerOnly:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b2C-gN-xn0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="gVN-zU-Gsh" firstAttribute="centerX" secondItem="T7B-7W-daU" secondAttribute="centerX" id="6zh-kk-oK5"/>
                             <constraint firstItem="T7B-7W-daU" firstAttribute="top" secondItem="wKy-GX-Y0A" secondAttribute="bottom" constant="121" id="CJj-5J-a9I"/>
+                            <constraint firstItem="gVN-zU-Gsh" firstAttribute="top" secondItem="T7B-7W-daU" secondAttribute="bottom" constant="24" id="FGB-04-5CA"/>
                             <constraint firstItem="wKy-GX-Y0A" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="26" id="PUp-6L-pjP"/>
                             <constraint firstItem="T7B-7W-daU" firstAttribute="centerX" secondItem="wKy-GX-Y0A" secondAttribute="centerX" id="XjF-oR-6IT"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wKy-GX-Y0A" secondAttribute="trailing" constant="26" id="XyX-B6-SSv"/>

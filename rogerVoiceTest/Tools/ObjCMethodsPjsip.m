@@ -33,12 +33,14 @@ static void error_exit1(const char *msg, pj_status_t stat);
 #pragma PJ interface and implementation
 
 @interface PJ ()
+//@synthesize delegate;
+
 @end
 
 @implementation PJ{
     pjsua_acc_id accountID;
     RegisterCallBack callBack;
-    
+
     
     
 }
@@ -195,15 +197,26 @@ static void error_exit1(const char *msg, pj_status_t stat);
     
     
 }
+
+//- (void)callIncoming
+//{
+//
+//
+//}
+
 @end
 
 @interface ObjCMethodsPjsip ()
-
+//-(void)test{
+//    
+//    
+//}
 @end
 
 
 @implementation ObjCMethodsPjsip : NSObject 
 PJ *pjcall;
+@synthesize delegate;
 
 
 //- (void)viewDidLoad {
@@ -225,7 +238,7 @@ PJ *pjcall;
 
 //timer selector
 - (void)tajmer{
-   
+
 }
 
 - (IBAction)HangUp:(id)sender {
@@ -263,7 +276,7 @@ PJ *pjcall;
 //    
 //}
 
-@end
+//@end
 
 
 
@@ -272,6 +285,7 @@ PJ *pjcall;
 #pragma mark static functions implementation
 
 static void on_incoming_call(pjsua_acc_id accountID, pjsua_call_id callID, pjsip_rx_data *rdata)
+
 {
     pjsua_call_info inf;
     
@@ -280,9 +294,17 @@ static void on_incoming_call(pjsua_acc_id accountID, pjsua_call_id callID, pjsip
     
     pjsua_call_get_info(callID, &inf);
     PJ_LOG(3, ("pj.c", "Incoming call from %.*s", (int)inf.remote_info.slen, inf.remote_info.ptr));
-    
+
     pjsua_call_answer(callID, 200, NULL, NULL);
+    [[NSNotificationCenter defaultCenter]
+     postNotificationName:@"notifyme"
+     object:nil
+     userInfo:nil];
+//    [self dismissViewControllerAnimated:NO completion:nil];
     
+    //    [tajmer]
+//    [delegate]
+//    [call_incomming]
 }
 
 
@@ -326,3 +348,4 @@ static void error_exit1(const char *msg, pj_status_t stat){
     exit(1);
 }
 
+@end

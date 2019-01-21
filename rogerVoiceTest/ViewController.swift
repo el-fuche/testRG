@@ -9,12 +9,24 @@
 import UIKit
 
 class ViewController: UIViewController {
+   
+    
+//    func callIncoming() {
+//        print("APPEL")
+//    }
+    
+    var myObj : ObjCMethodsPjsip?
+
 
     @IBOutlet weak var addressField: UITextField!
     
     @IBOutlet weak var makeCall: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        myObj = ObjCMethodsPjsip()
+        NotificationCenter.default.addObserver(self, selector:
+            #selector(receiveNotification(ns:)), name: NSNotification.Name(rawValue: "notifyme"), object: nil)
+
         
         //    [[PJ sharedPJ] startPjsipAndRegisterOnServer:"[host UTF8String]" withUserName:"[username UTF8String]" andPassword:"[pass UTF8String]"];
       
@@ -37,7 +49,7 @@ class ViewController: UIViewController {
         let pwd = "password"
         let cPwd = (pwd as NSString).utf8String
         
-        let uri = "sip:test.ring@sip5060.net"
+        let uri = "sip:marvin1@sip.antisip.com"
         let cUri = (uri as NSString).utf8String
         
         
@@ -49,7 +61,29 @@ class ViewController: UIViewController {
         PJ.shared().makeCall(UnsafeMutablePointer<Int8>(mutating: cUri))
     }
     
- 
+    @objc func receiveNotification(ns: NSNotification){
+        print("Received Notification")
+        //INCOMMMING CALL
+        
+    }
+    
+    @IBAction func registerOnly(_ sender: Any) {
+        let host = "sip.antisip.com"
+        let cHost = (host as NSString).utf8String
+        
+        let username = "marvin2"
+        let cUsername = (username as NSString).utf8String
+        
+        let pwd = "password"
+        let cPwd = (pwd as NSString).utf8String
+        
+        let uri = "sip:marvin1@sip.antisip.com"
+        let cUri = (uri as NSString).utf8String
+        
+         PJ.shared().startPjsipAndRegister(onServer: UnsafeMutablePointer<Int8>(mutating: cHost), withUserName: UnsafeMutablePointer<Int8>(mutating: cUsername), andPassword: UnsafeMutablePointer<Int8>(mutating: cPwd))
+        
+    }
+    
    
 }
 
