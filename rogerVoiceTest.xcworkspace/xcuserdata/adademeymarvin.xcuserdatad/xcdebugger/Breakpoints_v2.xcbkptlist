@@ -20,7 +20,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "rogerVoiceTest/Tools/ObjCMethodsPjsip.m"
-            timestampString = "569779690.426267"
+            timestampString = "569784045.670194"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "73"
@@ -32,16 +32,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "rogerVoiceTest/Tools/ObjCMethodsPjsip.m"
-            timestampString = "569779690.426923"
+            timestampString = "569784045.673264"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
-            landmarkName = "-makeCall:"
+            startingLineNumber = "290"
+            endingLineNumber = "290"
+            landmarkName = "on_call_media_state"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "rogerVoiceTest/ViewController.swift"
+            timestampString = "569784045.675334"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "receiveCall(ns:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -51,14 +67,60 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "rogerVoiceTest/Tools/ObjCMethodsPjsip.m"
-            timestampString = "569779690.427525"
+            filePath = "rogerVoiceTest/ViewController.swift"
+            timestampString = "569784045.675688"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "290"
-            endingLineNumber = "290"
-            landmarkName = "on_incoming_call"
-            landmarkType = "9">
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "receiveCall(ns:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "rogerVoiceTest.ViewController.receiveCall(ns: __ObjC.NSNotification) -&gt; ()"
+                  moduleName = "rogerVoiceTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adademeymarvin/Documents/AppIOS/rogerVoiceTest/rogerVoiceTest/ViewController.swift"
+                  timestampString = "569784045.800864"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "200">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in rogerVoiceTest.ViewController.receiveCall(ns: __ObjC.NSNotification) -&gt; ()"
+                  moduleName = "rogerVoiceTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adademeymarvin/Documents/AppIOS/rogerVoiceTest/rogerVoiceTest/ViewController.swift"
+                  timestampString = "569784045.80563"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "72"
+                  endingLineNumber = "72"
+                  offsetFromSymbolStart = "15">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "rogerVoiceTest/Tools/ObjCMethodsPjsip.m"
+            timestampString = "569784045.675871"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "331"
+            endingLineNumber = "331">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -67,14 +129,60 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "rogerVoiceTest/ViewController.swift"
-            timestampString = "569779690.427889"
+            filePath = "rogerVoiceTest/Tools/ObjCMethodsPjsip.m"
+            timestampString = "569784045.676809"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
-            landmarkName = "receiveNotification(ns:)"
-            landmarkType = "7">
+            startingLineNumber = "314"
+            endingLineNumber = "314">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "rogerVoiceTest/ViewController.swift"
+            timestampString = "569784083.8545671"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "rogerVoiceTest.ViewController.receiveCall(ns: __ObjC.NSNotification) -&gt; ()"
+                  moduleName = "rogerVoiceTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adademeymarvin/Documents/AppIOS/rogerVoiceTest/rogerVoiceTest/ViewController.swift"
+                  timestampString = "569784083.871642"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "200">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in rogerVoiceTest.ViewController.receiveCall(ns: __ObjC.NSNotification) -&gt; ()"
+                  moduleName = "rogerVoiceTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adademeymarvin/Documents/AppIOS/rogerVoiceTest/rogerVoiceTest/ViewController.swift"
+                  timestampString = "569784083.874426"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "72"
+                  endingLineNumber = "72"
+                  offsetFromSymbolStart = "15">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
