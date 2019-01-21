@@ -1,0 +1,10 @@
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/OpenSSL-Universal" "${PODS_ROOT}/Headers/Public/pjsip" $(inherited) "$(PODS_ROOT)/Headers/Public/pjsip/pjlib/include" "$(PODS_ROOT)/Headers/Public/pjsip/pjlib-util/include" "$(PODS_ROOT)/Headers/Public/pjsip/pjmedia/include" "$(PODS_ROOT)/Headers/Public/pjsip/pjnath/include" "$(PODS_ROOT)/Headers/Public/pjsip/pjsip/include"
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/OpenSSL-Universal/lib-ios" "${PODS_ROOT}/pjsip/build/openh264/lib" "${PODS_ROOT}/pjsip/build/opus/dependencies/lib" "${PODS_ROOT}/pjsip/build/pjproject/src/pjlib/lib" "${PODS_ROOT}/pjsip/build/pjproject/src/pjlib-util/lib" "${PODS_ROOT}/pjsip/build/pjproject/src/pjmedia/lib" "${PODS_ROOT}/pjsip/build/pjproject/src/pjnath/lib" "${PODS_ROOT}/pjsip/build/pjproject/src/pjsip/lib" "${PODS_ROOT}/pjsip/build/pjproject/src/third_party/lib"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/OpenSSL-Universal" -isystem "${PODS_ROOT}/Headers/Public/pjsip"
+OTHER_LDFLAGS = $(inherited) -l"crypto" -l"ssl" -l"stdc++" -framework "AVFoundation" -framework "AudioToolbox" -framework "CFNetwork" -framework "CoreMedia"
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods

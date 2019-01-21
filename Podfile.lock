@@ -1,0 +1,20 @@
+PODS:
+  - OpenSSL-Universal (1.0.2.13)
+  - pjsip (2.6):
+    - OpenSSL-Universal
+
+DEPENDENCIES:
+  - pjsip
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - OpenSSL-Universal
+    - pjsip
+
+SPEC CHECKSUMS:
+  OpenSSL-Universal: 401888162f11c33ebbd46f782d9229da35c61327
+  pjsip: 1fad137648dcbc6e1b2a6d153c7cc4c63d04e21d
+
+PODFILE CHECKSUM: bef1a625caaa0ed064e89fb1b6fa525feb4fca63
+
+COCOAPODS: 1.5.2
