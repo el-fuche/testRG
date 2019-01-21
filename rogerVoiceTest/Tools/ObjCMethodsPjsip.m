@@ -250,7 +250,7 @@ static void on_call_media_state(pjsua_call_id callID){
 }
 static void error_exit1(const char *msg, pj_status_t stat){
     
-    NSLog([NSString stringWithUTF8String:msg]);
+    NSLog(@"%@", [NSString stringWithUTF8String:msg]);
     pjsua_perror("pj.c", msg, stat);
     pjsua_destroy();
     exit(1);
